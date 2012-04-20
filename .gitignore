@@ -203,6 +203,12 @@ xst/
 *.syr
 *.xst
 *.xrpt
+*.wdb
+*_envsettings.html
+*.xwv*
+*.jhd
+*.ant
+*.wcfg
 
 fuse.log
 fuse.xmsgs
