@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2.04i
+//  \   \         Application : ISE
+//  /   /         Filename : test_bench01.tfw
+// /___/   /\     Timestamp : Wed Apr  4 09:04:23 2012
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: test_bench01
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module test_bench01;
+    wire out;
+    reg s1 = 1'b0;
+    reg s0 = 1'b0;
+    reg i0 = 1'b0;
+    reg i1 = 1'b0;
+    reg i2 = 1'b0;
+    reg i3 = 1'b0;
+
+
+    multiplexer4to1 UUT (
+        .out(out),
+        .s1(s1),
+        .s0(s0),
+        .i0(i0),
+        .i1(i1),
+        .i2(i2),
+        .i3(i3));
+
+    initial begin
+        // -------------  Current Time:  100ns
+        #100;
+        i0 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  200ns
+        #100;
+        s0 = 1'b1;
+        i0 = 1'b0;
+        i1 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  300ns
+        #100;
+        s1 = 1'b1;
+        s0 = 1'b0;
+        i1 = 1'b0;
+        i2 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  400ns
+        #100;
+        s0 = 1'b1;
+        i2 = 1'b0;
+        i3 = 1'b1;
+        // -------------------------------------
+        // -------------  Current Time:  500ns
+        #100;
+        i3 = 1'b0;
+    end
+
+endmodule
+

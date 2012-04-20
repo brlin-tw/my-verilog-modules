@@ -1,0 +1,2 @@
+verilog isim_temp "Source_code/multiplexer2to1.v"
+verilog isim_temp "/opt/Xilinx92i/verilog/src/glbl.v"

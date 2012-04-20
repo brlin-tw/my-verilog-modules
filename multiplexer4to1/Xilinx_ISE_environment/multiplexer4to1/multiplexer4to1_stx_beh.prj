@@ -1,0 +1,3 @@
+verilog isim_temp "Source_code/multiplexer2to1.v"
+verilog isim_temp "Source_code/multiplexer4to1.v"
+verilog isim_temp "/media/ezgo/opt/SSD/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"
