@@ -10,7 +10,7 @@
 #  /FILE←只不track根目錄的FILE檔案
 #  build/←忽略build目錄下的所有檔案
 #  doc/*.txt←doc/a.txt會被忽略但是doc/a/b.txt則不會被忽略（那怎樣才能忽略呢？）
-##我自己的設定
+##我自己的設定##
 #Eclipse CDT會將可執行檔跟object檔案放在configuration同名的資料夾，加入我自己慣用的名稱設定
 Debug*/
 Release*/
@@ -18,21 +18,21 @@ Release*/
 #Resources目錄底下的東西不想被排除
 !Resources/
 
-##Linux通用設定
+##Linux通用設定##
 .*
 !.gitignore
 
 #KDE的資料夾設定
 .directory
 
-##Windows通用設定
+##Windows通用設定##
 # Windows image file caches
 Thumbs.db
 
 # Folder config file
 Desktop.ini
 
-##文字編輯軟體備份檔
+##文字編輯軟體備份檔##
 #通用備份檔副檔名
 *~
 
@@ -173,10 +173,41 @@ local.properties
 # PDT-specific
 .buildpath
 
-##Verilog產生的檔案
+##HDL產生的檔案##
 #模擬用的程式
 Simulation/
 #模擬出來的波形檔
 *.vcd
 
+#Xilinx ISE
+_xmsgs/
+_ngo/
+iseconfig/
+isim/
+*_xdb/
+xst/
 
+*.restore
+*.ise_ISE_Backup
+*_summary.html
+*.map
+*.mrp
+*.ngr
+*.ngd
+*.ngc
+*.bld
+*.cmd_log
+*.lso
+*.ntrc_log
+*.stx
+*.syr
+*.xst
+*.xrpt
+
+fuse.log
+fuse.xmsgs
+fuseRelaunch.cmd
+isim.cmd
+isim.log
+webtalk_pn.xml
+xilinxsim.ini
