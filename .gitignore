@@ -53,6 +53,13 @@ Desktop.ini
 ##封存／壓縮檔
 *.7z
 *.zip
+*.tar
+
+##圖片檔案
+*.jpg
+*.png
+*.jpeg
+*.gif
 
 ##Code::Blocks專屬設定
 *.layout
@@ -186,6 +193,7 @@ iseconfig/
 isim/
 *_xdb/
 xst/
+isim.tmp_save/
 
 *.restore
 *.ise_ISE_Backup
@@ -209,7 +217,32 @@ xst/
 *.jhd
 *.ant
 *.wcfg
+*.ise_.lock
+*.bgn
+*.bit
+*.dkp
+*.drc
+*.lfp
+*.ncd
+*.pad
+*.par
+*.pcf
+*.twr
+*.twx
+*.ucf
+*.unroutes
+*.ut
+*.xpi
+*_guide.ncd
+*_map.ncd
+*_map.ngm
+*_pad.csv
+*_pad.txt
+*_summary.xml
+*_usage.xml
 
+device_usage_statistics.html
+isim.hdlsourcefiles
 fuse.log
 fuse.xmsgs
 fuseRelaunch.cmd
