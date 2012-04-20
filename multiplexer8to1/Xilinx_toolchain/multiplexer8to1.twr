@@ -1,0 +1,62 @@
+--------------------------------------------------------------------------------
+Release 9.1i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx91i\bin\nt\trce.exe -ise E:/tset/multiplexer8to1/multiplexer8to1.ise
+-intstyle ise -e 3 -s 4 -xml multiplexer8to1 multiplexer8to1.ncd -o
+multiplexer8to1.twr multiplexer8to1.pcf -ucf multiplexer8to1.ucf
+
+Design file:              multiplexer8to1.ncd
+Physical constraint file: multiplexer8to1.pcf
+Device,package,speed:     xc3s250e,pq208,-4 (PRODUCTION 1.26 2006-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+I<0>           |out            |   10.447|
+I<1>           |out            |    9.176|
+I<2>           |out            |    9.088|
+I<3>           |out            |    8.810|
+I<4>           |out            |    9.687|
+I<5>           |out            |    8.812|
+I<6>           |out            |    9.929|
+I<7>           |out            |    9.251|
+S<0>           |out            |   10.577|
+S<1>           |out            |   10.538|
+S<2>           |out            |    9.853|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Mar 07 13:01:10 2012
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 114 MB
+
+
+
