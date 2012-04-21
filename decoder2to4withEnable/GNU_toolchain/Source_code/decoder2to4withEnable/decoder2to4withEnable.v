@@ -3,27 +3,31 @@
    */
 `ifndef DECODER2TO4WITHENABLE_V_INCLUDED
 	`define DECODER2TO4WITHENABLE_V_INCLUDED
-	`timescale 1ns / 1ps
-	`include "Source_code/decoder1to2withEnable/decoder1to2withEnable.v"
+	`timescale 1ns / 100ps
+	`include "Source_code/decoder1to2/decoder1to2.v"
 
-	module decoder2to4withEnable(o3, o2, o1, o0, i1, i0, En);
-		input i1, i0, En;
-		output o3, o2, o1, o0;
-		wire i1N, raw3, raw2, raw1, raw0;
+	module decoder2to4withEnable(o, i, En);
+		output [3:0]o;
+		input [1:0]i;
+		input En;		
+		wire o3a, o2a, o1a, o0a, raw1, raw1bar, raw0, raw0bar;
 
-		//i1控制哪一個1對2解碼器作用（當作dec0跟dec1的作用訊號）
-		not
-			inv(i1N, i1);
-		decoder1to2withEnable
-			dec0(raw1, raw0, i0, i1N),
-			dec1(raw3, raw2, i0, i1);
+		//
+		decoder1to2
+			dec0(raw0, raw0bar, i[0]),
+			dec1(raw1, raw1bar, i[1]);
 
-		//En決定o0~o3是否作用
+		//
 		and
-			a3(o3, raw3, En),
-			a2(o2, raw2, En),
-			a1(o1, raw1, En),
-			a0(o0, raw0, En);
+			a3(o3a, raw1, raw0),
+			a2(o2a, raw1, raw0bar),
+			a1(o1a, raw1bar, raw0),
+			a0(o0a, raw1bar, raw0bar), 
+			
+			e3(o[3], o3a, En), 
+			e2(o[2], o2a, En), 
+			e1(o[1], o1a, En), 
+			e0(o[0], o0a, En);
 
 	endmodule
 `endif
