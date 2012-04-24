@@ -7,7 +7,7 @@
 
 module sevenSegmentDisplayDecoder_tb;
   reg [3:0]i;
-  wire [6:0]o;
+  wire [7:0]o;
 
 	//D.U.T. instantiation
 	sevenSegmentDisplayDecoder sevSegDec(o, i);
@@ -17,7 +17,7 @@ module sevenSegmentDisplayDecoder_tb;
     begin
       $dumpfile ("Simulation/sevenSegmentDisplayDecoder_tb.vcd");
       $dumpvars;
-      $monitor($time, " i=%4d -> o=%7b", i, o);
+      $monitor($time, " i=%4d -> o=%8b", i, o);
       
       i = 4'b0000;
       
