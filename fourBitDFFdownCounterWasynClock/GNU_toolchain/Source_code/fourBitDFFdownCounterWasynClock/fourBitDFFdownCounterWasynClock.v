@@ -1,5 +1,5 @@
 //非同步clock之四位元D型正反器
-`ifndef FOURBITDFFCOUNTWASYNCLK_V
+`ifndef FOURBITDFFDOWNCOUNTWASYNCLK_V
 	`timescale 1ns / 100ps
 	`include "Source_code/dFlipFlopNegClkNegRst/dFlipFlopNegClkNegRst.v"
 	module fourBitDFFdownCounterWasynClock(count, Clk, ClrN);
