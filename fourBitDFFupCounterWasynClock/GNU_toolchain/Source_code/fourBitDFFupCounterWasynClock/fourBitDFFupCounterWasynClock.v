@@ -1,4 +1,4 @@
-//非同步clock之四位元D型正反器
+//非同步clock之四位元D型正反器上數計數器
 `ifndef FOURBITDFFUPCOUNTWASYNCLK_V
 	`timescale 1ns / 100ps
 	`include "Source_code/dFlipFlopNegClkNegRst/dFlipFlopNegClkNegRst.v"
