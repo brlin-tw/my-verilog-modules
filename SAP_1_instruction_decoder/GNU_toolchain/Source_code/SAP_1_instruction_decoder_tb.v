@@ -7,8 +7,8 @@
 `define CLOCK_FREQ 50
 
 module SAP_1_instruction_decoder_tb();
-  reg ;
-  wire ;
+  reg [7:4]i;
+  wire [4:0]o;
 
 	//D.U.T. instantiation
 
