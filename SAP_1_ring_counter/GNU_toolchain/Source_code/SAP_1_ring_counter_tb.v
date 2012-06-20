@@ -1,18 +1,18 @@
-//testbench範本
+//testbench of SAP_1_ring_counter
 `timescale 1ns / 100ps
 
 //include模組
-`include "Source_code/ring_counter/ring_counter.v"
+`include "Source_code/SAP_1_ring_counter/SAP_1_ring_counter.v"
 
 //時脈頻率
 `define CLOCK_FREQ 100
 
-module ring_counter_tb();
+module SAP_1_ring_counter_tb();
   reg Clk, Rst;
   wire [6:1]t;
 
 	//D.U.T. instantiation
-  ring_counter counter1(t, Clk, Rst);
+  SAP_1_ring_counter counter1(t, Clk, Rst);
 
   /*時脈初始化*/
   always
@@ -23,7 +23,7 @@ module ring_counter_tb();
   initial
     begin
 	    //初始化
-      $dumpfile ("Simulation/ring_counter_tb.vcd");
+      $dumpfile ("Simulation/SAP_1_ring_counter_tb.vcd");
       $dumpvars;
       $monitor($time, "t=%6b <- Clk = %b, Rst = %b ", t, Clk, Rst);
 
