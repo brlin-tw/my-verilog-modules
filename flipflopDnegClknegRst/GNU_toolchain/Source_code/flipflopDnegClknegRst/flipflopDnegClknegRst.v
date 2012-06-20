@@ -4,11 +4,11 @@
 `ifndef FLIPFLOPDNCLKNRST_V
 	`define FLIPFLOPDNCLKNRST_V
 	`timescale 1ns / 100ps
-	module flipflopDnegClknegRst(Q, Qbar, D, Clk, ClrN);
-		input D, Clk, ClrN;
+	module flipflopDnegClknegRst(Q, Qbar, D, ClkN, ClrN);
+		input D, ClkN, ClrN;
 		output reg Q, Qbar;
 
-		always @(negedge Clk or negedge ClrN)
+		always @(negedge ClkN or negedge ClrN)
 		begin
 			if(~ClrN) begin
 				Q <= 0;

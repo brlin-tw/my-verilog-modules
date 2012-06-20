@@ -1,10 +1,10 @@
 `timescale 1ns / 100ps
 `include "Source_code/flipflopDnegClknegRst/flipflopDnegClknegRst.v"
 module flipflopDnegClknegRst_tb;
-  reg D, Clk, ClrN;
+  reg D, Clk, Clr;
   wire Q, Qbar;
 
-	flipflopDnegClknegRst dffng(Q, Qbar, D, Clk, ClrN);
+	flipflopDnegClknegRst dffng(Q, Qbar, D, Clk, Clr);
 
 always
   begin
@@ -20,13 +20,13 @@ initial /*stimulus*/
   begin
     $dumpfile("Simulation/flipflopDnegClknegRst_tb.vcd");
     $dumpvars;
-		$monitor($time, " D=%b, Clk=%b, ClrN=%b -> Q=%b, Qbar=%b", D, Clk, ClrN, Q, Qbar);
+		$monitor($time, " D=%b, Clk=%b, Clr=%b -> Q=%b, Qbar=%b", D, Clk, Clr, Q, Qbar);
 		//$monitor($time, " D=%b, Clk=%b, ClrN=%b -> Q=%b", D, Clk, ClrN, Q);
 
-    Clk = 0;ClrN = 0;D = 1;
+    Clk = 0;Clr = 0;D = 1;
 
     #75
-    ClrN = 1;
+    Clr = 1;
 
     #500 $finish;
   end
