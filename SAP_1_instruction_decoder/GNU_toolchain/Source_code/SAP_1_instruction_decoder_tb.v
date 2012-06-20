@@ -8,9 +8,16 @@
 
 module SAP_1_instruction_decoder_tb();
   reg [7:4]i;
-  wire [4:0]o;
+  wire LDA, ADD, SUB, OUT, HLT;
 
 	//D.U.T. instantiation
+	SAP_1_instruction_decoder
+		DUT(.LDA(LDA),
+				.ADD(ADD),
+				.SUB(SUB),
+				.OUT(OUT),
+				.HLT(HLT),
+				.i(i));
 
   /*時脈初始化
   always
@@ -19,14 +26,25 @@ module SAP_1_instruction_decoder_tb();
 	  end
   */
 
-
   initial
     begin
 	    //初始化
       $dumpfile ("Simulation/SAP_1_instruction_decoder_tb.vcd");
       $dumpvars;
-      $monitor($time, " ");
+      $monitor($time, " ADD=%b LDA=%b SUB=%b OUT=%b HLT=%b i=%4b", ADD, LDA, SUB, OUT, HLT, i);
+			i = 4'b0000;
 
       //模擬
+			#10
+      i = 4'b0001;
+      #20
+      i = 4'b0010;
+      #30
+      i = 4'b1110;
+      #40
+      i = 4'b1111;
+      #50
+      $finish;
+
     end
 endmodule
