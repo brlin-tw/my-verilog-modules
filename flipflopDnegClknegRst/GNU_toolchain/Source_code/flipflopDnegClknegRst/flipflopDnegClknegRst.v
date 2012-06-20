@@ -1,4 +1,4 @@
-/* 模組名稱： D型正反器（負緣觸發）
+/* 模組名稱： 負緣觸發Clk, Clr的D型正反器
    著作權宣告：copyright 2012 林博仁(pika1021@gmail.com)
    */
 `ifndef FLIPFLOPDNCLKNRST_V
