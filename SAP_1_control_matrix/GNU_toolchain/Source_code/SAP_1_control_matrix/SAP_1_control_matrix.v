@@ -6,14 +6,14 @@
 
 	/* 模組名稱：SAP_1_control_matrix
 		著作權宣告：copyright 2012 林博仁(pika1021@gmail.com) */
-	module SAP_1_control_matrix(CONTROL, LDA, ADD, SUB, OUT, ring_counter);
+	module SAP_1_control_matrix(Cp, Ep, LMbar, CEbar, LIbar, EIbar, LAbar, EA, SU, EU, LBbar, LObar, LDA, ADD, SUB, OUT, HLT, ring_counter);
 	//port 輸出輸入宣告
-		output [11:0]CONTROL;
-		input LDA, ADD, SUB, OUT;
+		output Cp, Ep, LMbar, CEbar, LIbar, EIbar, LAbar, EA, SU, EU, LBbar, LObar;
+		input LDA, ADD, SUB, OUT, HLT;
 		input [6:1]ring_counter;
 
 	//port 類型宣告
-		wire [11:0]CONTROL;
+		wire Cp, Ep, LMbar, CEbar, LIbar, EIbar, LAbar, EA, SU, EU, LBbar, LObar;
 		wire LDA, ADD, SUB, OUT;
 		wire [6:1]ring_counter;
 
@@ -41,6 +41,5 @@
 									ring_counter[5]);
 	assign LObar = ~(OUT && ring_counter[4]);
 
-	assign CONTROL = {Cp, Ep, LMbar, CEbar, LIbar, EIbar, LAbar, EA, SU, EU, LBbar, LObar};
 	endmodule
 `endif
