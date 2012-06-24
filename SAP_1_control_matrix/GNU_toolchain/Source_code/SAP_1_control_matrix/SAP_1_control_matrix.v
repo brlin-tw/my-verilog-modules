@@ -14,10 +14,9 @@
 
 	//port 類型宣告
 		wire Cp, Ep, LMbar, CEbar, LIbar, EIbar, LAbar, EA, SU, EU, LBbar, LObar;
-		wire LDA, ADD, SUB, OUT;
+		wire LDA, ADD, SUB, OUT, HLT;
 		wire [6:1]ring_counter;
 
-	wire Cp, Ep, LMbar, CEbar, LIbar, EIbar, LAbar, EA, SU, EU, LBbar, LObar;
   assign	Cp = ring_counter[2];
 	assign Ep = ring_counter[1];
 
