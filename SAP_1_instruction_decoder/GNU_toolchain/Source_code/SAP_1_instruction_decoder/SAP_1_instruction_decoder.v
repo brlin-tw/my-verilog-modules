@@ -3,17 +3,17 @@
    */
 `timescale 1ns / 100ps
 
-module SAP_1_instruction_decoder(LDA, ADD, SUB, OUT, HLT, i);
+module SAP_1_instruction_decoder(LDA, ADD, SUB, OUT, HLT, in);
   output LDA, ADD, SUB, OUT, HLT;
-  input [7:4]i;
+  input [7:4]in;
 	// LDA = 0000
-  assign LDA = !i[7] && !i[6] && !i[5] && !i[4];
+  assign LDA = !in[7] && !in[6] && !in[5] && !in[4];
   // ADD = 0001
-  assign ADD = !i[7] && !i[6] && !i[5] && i[4];
+  assign ADD = !in[7] && !in[6] && !in[5] && in[4];
   // SUB = 0010
-  assign SUB = !i[7] && !i[6] && i[5] && !i[4];
+  assign SUB = !in[7] && !in[6] && in[5] && !in[4];
   // OUT = 1110
-  assign OUT = i[7] && i[6] && i[5] && !i[4];
+  assign OUT = in[7] && in[6] && in[5] && !in[4];
   // HLT = 1111
-  assign HLT = i[7] && i[6] && i[5] && i[4];
+  assign HLT = in[7] && in[6] && in[5] && in[4];
 endmodule

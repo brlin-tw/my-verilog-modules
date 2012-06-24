@@ -4,10 +4,10 @@
 //include模組
 `include "Source_code/SAP_1_instruction_decoder/SAP_1_instruction_decoder.v"
 //時脈頻率
-`define CLOCK_FREQ 50
+`define CLOCK_FREQ 10
 
 module SAP_1_instruction_decoder_tb();
-  reg [7:4]i;
+  reg [7:4]in;
   wire LDA, ADD, SUB, OUT, HLT;
 
 	//D.U.T. instantiation
@@ -17,7 +17,7 @@ module SAP_1_instruction_decoder_tb();
 				.SUB(SUB),
 				.OUT(OUT),
 				.HLT(HLT),
-				.i(i));
+				.in(in));
 
   /*時脈初始化
   always
@@ -31,19 +31,19 @@ module SAP_1_instruction_decoder_tb();
 	    //初始化
       $dumpfile ("Simulation/SAP_1_instruction_decoder_tb.vcd");
       $dumpvars;
-      $monitor($time, "LDA =%b ADD=%b SUB=%b OUT=%b HLT=%b i=%4b", LDA, ADD, SUB, OUT, HLT, i);
-			i = 4'b0000;
+      $monitor($time, " LDA =%b ADD=%b SUB=%b OUT=%b HLT=%b in=%4b", LDA, ADD, SUB, OUT, HLT, in);
+			in = 4'b0000;
 
       //模擬
 			#10
-      i = 4'b0001;
-      #20
-      i = 4'b0010;
-      #30
-      i = 4'b1110;
-      #40
-      i = 4'b1111;
-      #50
+      in = 4'b0001;
+      #10
+      in = 4'b0010;
+      #10
+      in = 4'b1110;
+      #10
+      in = 4'b1111;
+      #10
       $finish;
 
     end
