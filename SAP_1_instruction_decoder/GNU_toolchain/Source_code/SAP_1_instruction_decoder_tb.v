@@ -31,7 +31,7 @@ module SAP_1_instruction_decoder_tb();
 	    //初始化
       $dumpfile ("Simulation/SAP_1_instruction_decoder_tb.vcd");
       $dumpvars;
-      $monitor($time, " ADD=%b LDA=%b SUB=%b OUT=%b HLT=%b i=%4b", ADD, LDA, SUB, OUT, HLT, i);
+      $monitor($time, "LDA =%b ADD=%b SUB=%b OUT=%b HLT=%b i=%4b", LDA, ADD, SUB, OUT, HLT, i);
 			i = 4'b0000;
 
       //模擬
