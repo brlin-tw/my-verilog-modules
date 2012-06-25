@@ -6,7 +6,7 @@
 
 module fullAdder8bit(proC, sum, add, aug, preC);
   input [7:0]add;
-  input aug;
+  input [7:0]aug;
   input preC;
   output proC;
   output [7:0]sum;
