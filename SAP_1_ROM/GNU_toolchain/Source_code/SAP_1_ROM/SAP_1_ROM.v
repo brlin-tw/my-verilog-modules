@@ -1,6 +1,6 @@
 //include guard
-`ifndef
-	`define
+`ifndef SAP_1_ROM
+	`define SAP_1_ROM
 	// 時間相關設定
 	`timescale 1ns / 100ps
 
@@ -12,7 +12,7 @@
 	module SAP_1_ROM(instruction_out, address_in, CEbar);
 	//port 輸出輸入宣告
 		output [7:0] instruction_out;
-		input [3:0]address_in;
+		input [3:0] address_in;
 		input CEbar;
 
 	//port 類型宣告
@@ -21,9 +21,11 @@
 		wire CEbar;
 
 	wire [15:0] dec_out;
-	decoder4to16(dec_out, address_in);
+	decoder4to16
+		dec(dec_out, address_in);
 	wire [7:0] instruction;
-	SAP_1_ROM_mapping(instruction, dec_out);
+	SAP_1_ROM_mapping
+		map(instruction, dec_out);
 
 	bufif0
 		triN0(instruction_out[0], instruction[0], CEbar),
@@ -32,7 +34,8 @@
 		triN3(instruction_out[3], instruction[3], CEbar),
 		triN4(instruction_out[4], instruction[4], CEbar),
 		triN5(instruction_out[5], instruction[5], CEbar),
-		triN6(instruction_out[6], instruction[6], CEbar);
+		triN6(instruction_out[6], instruction[6], CEbar),
+		triN7(instruction_out[7], instruction[7], CEbar);
 
 	endmodule
 `endif

@@ -8,8 +8,8 @@
 		著作權宣告：copyright 2012 林博仁(pika1021@gmail.com) */
 	module SAP_1_ROM_mapping(out, in);
 	//port 輸出輸入宣告
-		output [15:0]in;
-		input [7:0]out;
+		output [7:0]out;
+		input [15:0]in;
 
 	//port 類型宣告
 		wire [7:0]out;
