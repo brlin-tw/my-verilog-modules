@@ -18,6 +18,10 @@ Release*/
 #Resources目錄底下的東西不想被排除
 !Resources/
 
+#我慣用的備份檔副檔名
+*.backup
+*.bak
+
 ##Linux通用設定##
 .*
 !.gitignore
@@ -33,7 +37,8 @@ Thumbs.db
 Desktop.ini
 
 ##文字編輯軟體備份檔##
-#通用備份檔副檔名
+#包含「~」字元的通用備份檔副檔名
+*.*~*
 *~
 
 #Kate的備份檔
@@ -54,6 +59,12 @@ Desktop.ini
 *.7z
 *.zip
 *.tar
+
+##圖片檔案
+#*.jpg
+#*.png
+#*.jpeg
+#*.gif
 
 ##Code::Blocks專屬設定
 *.layout
@@ -139,6 +150,10 @@ UpgradeLog*.XML
 *.dep
 *.idb
 
+#Visual Studio 2010
+*.old
+*.vcxproj.filters
+
 ##Eclipse專屬設定
 *.pydevproject
 
@@ -175,8 +190,6 @@ local.properties
 .buildpath
 
 ##HDL產生的檔案##
-#模擬用的程式
-Simulation/
 #模擬出來的波形檔
 *.vcd
 
@@ -188,6 +201,7 @@ isim/
 *_xdb/
 xst/
 isim.tmp_save/
+planAhead*/
 
 *.restore
 *.ise_ISE_Backup
@@ -214,7 +228,6 @@ isim.tmp_save/
 *.ise_.lock
 *.bgn
 *.bit
-*.dkp
 *.drc
 *.lfp
 *.ncd
@@ -234,13 +247,25 @@ isim.tmp_save/
 *_pad.txt
 *_summary.xml
 *_usage.xml
+*.gise
+*.prj
+*.ptwx
+*_bitgen.xwbt
+*.tcl
+*.log
+*.xmsgs
+*.cmd
 
+usage_statistics_webtalk.html
 device_usage_statistics.html
 isim.hdlsourcefiles
-fuse.log
-fuse.xmsgs
-fuseRelaunch.cmd
-isim.cmd
-isim.log
 webtalk_pn.xml
 xilinxsim.ini
+planAhead.jou
+
+
+##bomstrip備份檔案
+*.bom
+
+##DevC++整合式開發環境
+Makefile.win
