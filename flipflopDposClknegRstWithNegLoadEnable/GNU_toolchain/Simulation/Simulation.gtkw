@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Wed Jun 27 07:54:00 2012
+[*]
+[dumpfile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/flipflopDposClknegRstWithNegLoadEnable/GNU_toolchain/Simulation/flipflopDposClknegRstWithNegLoadEnable_tb.vcd"
+[dumpfile_mtime] "Wed Jun 27 07:50:05 2012"
+[dumpfile_size] 1302
+[savefile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/flipflopDposClknegRstWithNegLoadEnable/GNU_toolchain/Simulation/Simulation.gtkw"
+[timestart] 0
+[size] 952 992
+[pos] -1 -1
+*-16.590216 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 244
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+flipflopDposClknegRstWithNegLoadEnable_tb.Q
+@200
+-
+@28
+flipflopDposClknegRstWithNegLoadEnable_tb.D
+flipflopDposClknegRstWithNegLoadEnable_tb.Enbar
+flipflopDposClknegRstWithNegLoadEnable_tb.ClrN
+@29
+flipflopDposClknegRstWithNegLoadEnable_tb.ClkN
+[pattern_trace] 1
+[pattern_trace] 0
