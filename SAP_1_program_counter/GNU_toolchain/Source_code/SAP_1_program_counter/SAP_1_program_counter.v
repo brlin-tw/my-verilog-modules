@@ -31,22 +31,22 @@
 		dff0(
 			.Q(q0),
 			.D(d0),
-			.Clk(Clk),
+			.ClkN(Clk),
 			.ClrN(!Clr)),
 		dff1(
 			.Q(q1),
 			.D(d1),
-			.Clk(q0),
+			.ClkN(q0),
 			.ClrN(!Clr)),
 		dff2(
 			.Q(q2),
 			.D(d2),
-			.Clk(q1),
+			.ClkN(q1),
 			.ClrN(!Clr)),
 		dff3(
 			.Q(q3),
 			.D(d3),
-			.Clk(q2),
+			.ClkN(q2),
 			.ClrN(!Clr));
 
 	bufif1 g0(PC[0], q0, Ep);
