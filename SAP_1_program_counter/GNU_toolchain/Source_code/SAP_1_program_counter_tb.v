@@ -19,8 +19,8 @@ module SAP_1_program_counter_tb();
 			.PC(PC),
 			.Cp(Cp),
 			.Ep(Ep),
-			.Clk(Clk),
-			.Clr(Clr));
+			.ClkN(Clk),
+			.ClrN(Clr));
 
   /* 時脈產生器*/
   always begin
@@ -36,11 +36,11 @@ module SAP_1_program_counter_tb();
 		Ep = 'b0;
 		Cp = 'b0;
 		Clk = 'b0;
-		Clr = 'b1;
+		Clr = 'b0;
 
 		//模擬
 		#15
-		Clr = 'b0;
+		Clr = 'b1;
 		Ep = 'b1;
 		#35
 		Cp = 'b1;

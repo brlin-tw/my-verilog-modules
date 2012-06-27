@@ -9,17 +9,17 @@
 
 	/* 模組名稱：SAP_1_program_counter
 		著作權宣告：copyright 2012 林博仁(pika1021@gmail.com) */
-	module SAP_1_program_counter(PC, Cp, Ep, Clr, Clk);
+	module SAP_1_program_counter(PC, Cp, Ep, ClrN, ClkN);
 	//port 輸出輸入宣告
-		output [3:0]PC;
-		input Cp, Ep, Clr, Clk;
+	output [3:0]PC;
+	input Cp, Ep, ClrN, ClkN;
 
 	//port 類型宣告
-		wire Cp, Ep, Clr, Clk;
-		wire [3:0]PC;
+	wire Cp, Ep, ClrN, ClkN;
+	wire [3:0]PC;
 
-		wire q0, q1, q2, q3,
-				 d0, d1, d2, d3;
+	wire q0, q1, q2, q3,
+				d0, d1, d2, d3;
 
 	xor g0(d0, Cp, q0),
 			g1(d1, Cp, q1),
@@ -31,23 +31,23 @@
 		dff0(
 			.Q(q0),
 			.D(d0),
-			.ClkN(Clk),
-			.ClrN(!Clr)),
+			.ClkN(ClkN),
+			.ClrN(ClrN)),
 		dff1(
 			.Q(q1),
 			.D(d1),
 			.ClkN(q0),
-			.ClrN(!Clr)),
+			.ClrN(ClrN)),
 		dff2(
 			.Q(q2),
 			.D(d2),
 			.ClkN(q1),
-			.ClrN(!Clr)),
+			.ClrN(ClrN)),
 		dff3(
 			.Q(q3),
 			.D(d3),
 			.ClkN(q2),
-			.ClrN(!Clr));
+			.ClrN(ClrN));
 
 	bufif1 g0(PC[0], q0, Ep);
 	bufif1 g1(PC[1], q1, Ep);
