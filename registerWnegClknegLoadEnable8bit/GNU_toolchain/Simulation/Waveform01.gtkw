@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Tue Jun 26 20:45:12 2012
+[*]
+[dumpfile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/registerWnegClknegLoadEnable8bit/GNU_toolchain/Simulation/registerWnegClknegLoadEnable8bit_tb.vcd"
+[dumpfile_mtime] "Tue Jun 26 20:35:35 2012"
+[dumpfile_size] 6365
+[savefile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/registerWnegClknegLoadEnable8bit/GNU_toolchain/Simulation/Waveform01.gtkw"
+[timestart] 0
+[size] 952 992
+[pos] -1 -1
+*-14.068650 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 244
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@22
+registerWnegClknegLoadEnable8bit_tb.out[7:0]
+@200
+-
+@22
+registerWnegClknegLoadEnable8bit_tb.in[7:0]
+@28
+registerWnegClknegLoadEnable8bit_tb.Enbar
+registerWnegClknegLoadEnable8bit_tb.Clk
+[pattern_trace] 1
+[pattern_trace] 0

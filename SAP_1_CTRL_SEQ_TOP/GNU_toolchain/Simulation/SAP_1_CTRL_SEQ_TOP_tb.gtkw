@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Sun Jun 24 16:27:31 2012
+[*]
+[dumpfile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/SAP_1_CTRL_SEQ_TOP/GNU_toolchain/Simulation/SAP_1_CTRL_SEQ_TOP_tb.vcd"
+[dumpfile_mtime] "Sun Jun 24 16:16:24 2012"
+[dumpfile_size] 2374
+[savefile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/SAP_1_CTRL_SEQ_TOP/GNU_toolchain/Simulation/Simulation_LDA.gtkw"
+[timestart] 0
+[size] 952 992
+[pos] -1 -1
+*-14.838829 50900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] SAP_1_CTRL_SEQ_TOP_tb.
+[treeopen] SAP_1_CTRL_SEQ_TOP_tb.dut.
+[sst_width] 244
+[signals_width] 130
+[sst_expanded] 1
+[sst_vpaned_height] 288
+@28
+SAP_1_CTRL_SEQ_TOP_tb.Cp
+SAP_1_CTRL_SEQ_TOP_tb.Ep
+SAP_1_CTRL_SEQ_TOP_tb.LMbar
+SAP_1_CTRL_SEQ_TOP_tb.CEbar
+SAP_1_CTRL_SEQ_TOP_tb.LIbar
+SAP_1_CTRL_SEQ_TOP_tb.EIbar
+SAP_1_CTRL_SEQ_TOP_tb.LAbar
+SAP_1_CTRL_SEQ_TOP_tb.EA
+SAP_1_CTRL_SEQ_TOP_tb.SU
+SAP_1_CTRL_SEQ_TOP_tb.EU
+SAP_1_CTRL_SEQ_TOP_tb.LBbar
+SAP_1_CTRL_SEQ_TOP_tb.LObar
+@200
+-
+@28
+SAP_1_CTRL_SEQ_TOP_tb.Clr
+@23
+SAP_1_CTRL_SEQ_TOP_tb.opcode[7:4]
+@28
+SAP_1_CTRL_SEQ_TOP_tb.Clk
+[pattern_trace] 1
+[pattern_trace] 0
