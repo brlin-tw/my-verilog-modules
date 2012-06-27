@@ -36,11 +36,11 @@
 //    F = 01110001
 //          7   1
 
-`ifndef SEVENSEGMENTDISPLAYDECODER_V
-  `define SEVENSEGMENTDISPLAYDECODER_V
+`ifndef decoderDisplay7Segment
+  `define decoderDisplay7Segment
   `timescale 1ns / 100ps
 
-  module sevenSegmentDisplayDecoder(out, in);
+  module decoderDisplay7Segment(out, in);
     output [7:0]out;
     input [3:0] in;
 
