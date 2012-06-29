@@ -40,7 +40,7 @@ module SAP_1_instruction_register_tb();
 		Clr = 1;
 
 		#15
-		instruction = 8'b10101010;
+		instruction = 8'b1010_0101;
 
 		#20
 		LIbar = 0;

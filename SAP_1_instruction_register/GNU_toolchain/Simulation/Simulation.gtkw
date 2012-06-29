@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Thu Jun 28 07:58:58 2012
+[*]
+[dumpfile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/SAP_1_instruction_register/GNU_toolchain/Simulation/SAP_1_instruction_register_tb.vcd"
+[dumpfile_mtime] "Thu Jun 28 07:41:53 2012"
+[dumpfile_size] 5671
+[savefile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/SAP_1_instruction_register/GNU_toolchain/Simulation/Simulation.gtkw"
+[timestart] 0
+[size] 1920 1000
+[pos] -917 -5
+*-13.481830 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 244
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@22
+SAP_1_instruction_register_tb.opcode[3:0]
+SAP_1_instruction_register_tb.operand[3:0]
+@200
+-
+@22
+SAP_1_instruction_register_tb.instruction[7:0]
+@28
+SAP_1_instruction_register_tb.LIbar
+SAP_1_instruction_register_tb.EIbar
+SAP_1_instruction_register_tb.Clr
+@29
+SAP_1_instruction_register_tb.Clk
+[pattern_trace] 1
+[pattern_trace] 0
