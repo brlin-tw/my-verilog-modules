@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Fri Jun 29 09:42:47 2012
+[*]
+[dumpfile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/SAP_1/GNU_toolchain/Simulation/SAP_1_top_module_tb.vcd"
+[dumpfile_mtime] "Fri Jun 29 08:26:11 2012"
+[dumpfile_size] 34195
+[savefile] "/home/Vdragon/Dropbox/Workspace/Programming/Verilog/My_projects/Vdragons_VHDL_modules_collection/SAP_1/GNU_toolchain/Simulation/Simulation01.gtkw"
+[timestart] 0
+[size] 1920 1000
+[pos] -5 -5
+*-13.849664 78530 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] SAP_1_top_module_tb.
+[treeopen] SAP_1_top_module_tb.dut.
+[treeopen] SAP_1_top_module_tb.dut.CTRL_SEQ.
+[treeopen] SAP_1_top_module_tb.dut.MAR_ROM.
+[sst_width] 244
+[signals_width] 186
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@28
+SAP_1_top_module_tb.dut.CTRL_SEQ.ring.state[6:1]
+@200
+-
+@22
+SAP_1_top_module_tb.dut.outcome[7:0]
+SAP_1_top_module_tb.dut.busW[7:0]
+@200
+-
+@28
+SAP_1_top_module_tb.dut.PC.PC[3:0]
+SAP_1_top_module_tb.dut.PC.Ep
+SAP_1_top_module_tb.dut.PC.Cp
+@200
+-
+@22
+SAP_1_top_module_tb.dut.MAR_ROM.instruction[7:0]
+SAP_1_top_module_tb.dut.MAR_ROM.address[3:0]
+@28
+SAP_1_top_module_tb.dut.MAR_ROM.LMbar
+SAP_1_top_module_tb.dut.MAR_ROM.CEbar
+@201
+-
+@28
+SAP_1_top_module_tb.Clr
+SAP_1_top_module_tb.Clk
+[pattern_trace] 1
+[pattern_trace] 0
