@@ -2,7 +2,7 @@
   #author:Vdragon(pika1021@gmail.com)
   #this file is licensed under LGPL 3 or later
 build:
-	iverilog -o Simulation/decoder1to2_tb.executable Source_code/decoder1to2_tb.v
+	cd ../Source_code && iverilog -o ../GNU_toolchain/Simulation/decoder1to2_tb.executable decoder1to2_tb.v
 
 simulate:
 	Simulation/decoder1to2_tb.executable

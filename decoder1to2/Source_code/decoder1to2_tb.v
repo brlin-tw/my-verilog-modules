@@ -1,7 +1,7 @@
 //decoder1to2 testbench
 `timescale 1ns / 100ps
 //`define CLOCK_FREQ 50
-`include "Source_code/decoder1to2/decoder1to2.v"
+`include "decoder1to2/decoder1to2.v"
 module decoder1to2_tb();
   reg i;
   wire o1, o0;
