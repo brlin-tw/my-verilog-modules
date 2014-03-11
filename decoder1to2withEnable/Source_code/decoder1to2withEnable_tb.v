@@ -2,7 +2,7 @@
 //作者：林博仁(pika1021@gmail.com)
 //本程式碼以LGPL 3及以上版本授權所有人使用
 `timescale 1ns / 100ps
-`include "Source_code/decoder1to2withEnable/decoder1to2withEnable.v"
+`include "decoder1to2withEnable/decoder1to2withEnable.v"
 module decoder1to2withEnable_tb;
   reg i, en;
   wire o1, o0;
