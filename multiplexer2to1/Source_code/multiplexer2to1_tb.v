@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "multiplexer2to1/multiplexer2to1.v"
 
 module multiplexer2to1_tb;
   reg i1, i0, select;
