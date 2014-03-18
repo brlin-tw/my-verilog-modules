@@ -3,7 +3,7 @@
   #this file is licensed under LGPL 3 or later
 build:
 	mkdir --parents Simulation
-	iverilog -o Simulation/decoderDisplay7Segment_tb.executable Source_code/decoderDisplay7Segment_tb.v
+	cd ../Source_code; iverilog -o ../GNU_toolchain/Simulation/decoderDisplay7Segment_tb.executable decoderDisplay7Segment_tb.v
 
 simulate:
 	Simulation/decoderDisplay7Segment_tb.executable
