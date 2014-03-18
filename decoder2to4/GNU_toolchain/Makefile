@@ -3,7 +3,7 @@
   #this file is licensed under LGPL 3 or later
 build:
 	mkdir --parents Simulation
-	iverilog -o Simulation/decoder2to4_tb.executable Source_code/decoder2to4_tb.v
+	cd ../Source_code && iverilog -o ../GNU_toolchain/Simulation/decoder2to4_tb.executable decoder2to4_tb.v
 
 simulate:
 	Simulation/decoder2to4_tb.executable

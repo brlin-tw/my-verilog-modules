@@ -4,7 +4,7 @@
 `ifndef DECODER2TO4_V_INCLUDED
 	`define DECODER2TO4_V_INCLUDED
 	`timescale 1ns / 100ps
-	`include "Source_code/decoder1to2/decoder1to2.v"
+	`include "decoder1to2/decoder1to2.v"
 
 	module decoder2to4(o, i);
 		output [3:0]o;

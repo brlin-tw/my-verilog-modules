@@ -1,6 +1,6 @@
 //2對4解碼器的testbench
 `timescale 1ns / 1ps
-`include "Source_code/decoder2to4/decoder2to4.v"
+`include "decoder2to4/decoder2to4.v"
 module decoder2to4Test;
   reg [1:0] i;
   wire [3:0] o;
