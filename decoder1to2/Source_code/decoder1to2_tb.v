@@ -15,6 +15,7 @@ module decoder1to2_tb();
       $dumpvars;
 
 			i = 0;
+			$display("\t時間（奈秒）\t狀態");			
 			$display($time, "  ", "i = %b ==> output = %b%b", i, o1, o0);
     end
 
