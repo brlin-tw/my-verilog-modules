@@ -2,17 +2,17 @@
 `timescale 1ns / 100ps
 
 //include模組
-`include "Source_code/fullAdder1bit/fullAdder1bit.v"
+`include "Source_code/adder_full_1bit/adder_full_1bit.v"
 
 //時脈頻率
 //`define CLOCK_FREQ 50
 
-module fullAdder1bit_tb;
+module adder_full_1bit_tb;
   reg add, aug, preC;
   wire proC, sum;
 
 	//D.U.T. instantiation
-  fullAdder1bit adder(proC, sum, add, aug, preC);
+  adder_full_1bit adder(proC, sum, add, aug, preC);
 
   /*時脈初始化
   always
@@ -25,7 +25,7 @@ module fullAdder1bit_tb;
   initial
     begin
 	    //初始化
-      $dumpfile ("Simulation/fullAdder1bit_tb.vcd");
+      $dumpfile ("Simulation/adder_full_1bit_tb.vcd");
       $dumpvars;
       $monitor($time, " add=%b + aug=%b + preC=%b = proC=%b + sum=%b", add, aug, preC, proC, sum);
 
