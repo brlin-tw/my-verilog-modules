@@ -1,6 +1,6 @@
 //encoder16to4 testbench
 `timescale 1ns / 100ps
-`include "Source_code/encoder16to4/encoder16to4.v"
+`include "../Source_code/encoder16to4/encoder16to4.v"
 
 //時脈頻率
 //`define CLOCK_FREQ 50
