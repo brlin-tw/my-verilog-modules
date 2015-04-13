@@ -2,14 +2,16 @@
 `include "multiplexer2to1/multiplexer2to1.v"
 
 module multiplexer2to1_tb;
-  reg i1, i0, select;
-  wire out;
+	reg [1:0]input_signal;
+  reg selection;
+  wire output_signal;
+  
 	/*DUT instantiation*/
-  multiplexer2to1 mul(out, i1, i0, select);
+  multiplexer2to1 dut(output_signal, input_signal, selection);
 
   initial
   begin
-    $monitor($time, " i = %b%b select = %b => out = %b", i1, i0, select, out);
+    $monitor($time, " input_signal = %b%b selection = %b => output_signal = %b", input_signal[1], input_signal[0], selection, output_signal);
   end
 
   initial
@@ -17,14 +19,14 @@ module multiplexer2to1_tb;
 	  /*初始化*/
     $dumpfile("Simulation/multiplexer2to1_tb.vcd");
     $dumpvars;
-    select = 0;
-    i0 = 0;
-    i1 = 0;
+    selection = 0;
+    input_signal[0] = 0;
+    input_signal[1] = 0;
 
 		/*模擬*/
-    #10 i0 = 1;
-    #10 select = 1;
-    #10 i1 = 1;
+    #10 input_signal[0] = 1;
+    #10 selection = 1;
+    #10 input_signal[1] = 1;
     #10 $finish;
   end
 endmodule
