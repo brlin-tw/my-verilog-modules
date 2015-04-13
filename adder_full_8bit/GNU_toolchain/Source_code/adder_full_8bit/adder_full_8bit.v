@@ -1,10 +1,10 @@
-/* 模組名稱：fullAdder8bit
+/* 模組名稱：adder_full_8bit
    著作權宣告：copyright 2012 林博仁(pika1021@gmail.com)
    */
 `timescale 1ns / 100ps
-`include "Source_code/fullAdder1bit/fullAdder1bit.v"
+`include "Source_code/adder_full_1bit/adder_full_1bit.v"
 
-module fullAdder8bit(proC, sum, add, aug, preC);
+module adder_full_8bit(proC, sum, add, aug, preC);
   input [7:0]add;
   input [7:0]aug;
   input preC;
@@ -13,7 +13,7 @@ module fullAdder8bit(proC, sum, add, aug, preC);
 
   wire [7:1]c;
 
-  fullAdder1bit
+  adder_full_1bit
     fa0(c[1], sum[0], add[0], aug[0], preC),
     fa1(c[2], sum[1], add[1], aug[1], c[1]),
     fa2(c[3], sum[2], add[2], aug[2], c[2]),
