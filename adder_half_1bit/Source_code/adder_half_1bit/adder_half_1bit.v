@@ -7,7 +7,7 @@
 	`timescale 1ns / 100ps
 
 	/* 模組名稱 | Module Name
-
+			一位元半加法器
 		 著作權宣告 | Copyright Declaration
 				copyright 2012 林博仁(pika1021@gmail.com) */
 	module adder_half_1bit(carry, sum, input_a, input_b);
