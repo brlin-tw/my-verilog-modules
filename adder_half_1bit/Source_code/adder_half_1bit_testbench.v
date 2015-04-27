@@ -3,7 +3,7 @@
 `timescale 1ns / 100ps
 
 //include D.U.T.模組
-`include "../../Source_code/adder_half_1bit.v"
+`include "../../Source_code/adder_half_1bit/adder_half_1bit.v"
 
 //時脈產生器半週期
 //`define CLOCK_PERIOD_HALF 10
@@ -24,7 +24,7 @@ module adder_half_1bit_testbench();
   
   initial begin
 		//初始化
-		$dumpfile ("Simulation/adder_half_1bit.vcd");
+		$dumpfile ("Simulation/adder_half_1bit_testbench.vcd");
 		$dumpvars;
 		$display("\t\t時間\tcarry\tsum\tb\ta");
 		$monitor("%d\t%b\t%b\t%b\t%b", $time, output_carry, output_sum, input_a, input_b);
