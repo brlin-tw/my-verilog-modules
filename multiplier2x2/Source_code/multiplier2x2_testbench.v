@@ -11,10 +11,10 @@
 module multiplier2x2_testbench();
 //宣告port類型
   reg [1:0]multiplicand, multiplier;
-  wire [3:0]result;
+  wire [3:0]product;
 
 	//D.U.T. instantiation
-	multiplier2x2 dut(result, multiplicand, multiplier);
+	multiplier2x2 dut(product, multiplicand, multiplier);
 	
   /* 時脈產生器
   always begin
@@ -27,7 +27,7 @@ module multiplier2x2_testbench();
 		$dumpfile ("Simulation/multiplier2x2_testbench.vcd");
 		$dumpvars;
 		$display("\t\t時間\t積\t被乘數\t乘數");
-		$monitor("%d\t%d\t%d\t%d", $time, result, multiplicand, multiplier);
+		$monitor("%d\t%d\t%d\t%d", $time, product, multiplicand, multiplier);
 
 		//模擬
 		multiplicand = 0;
