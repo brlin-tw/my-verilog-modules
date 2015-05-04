@@ -22,6 +22,7 @@
 		wire product2carry;
 		wire m1andm1;
 		wire m2andm0;
+		wire m2andm1;
 		wire product3carry;
 		
 		and multiplicand0multiplier0(product[0], multiplicand[0], multiplier[0]);
