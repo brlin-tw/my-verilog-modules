@@ -3,7 +3,7 @@
   #this file is licensed under LGPL 3 or later
 build:
 	mkdir --parents Simulation
-	iverilog -o Simulation/adder_full_1bit_tb.executable Source_code/adder_full_1bit_tb.v
+	iverilog -o Simulation/adder_full_1bit_tb.executable ../Source_code/adder_full_1bit_tb.v
 
 simulate:
 	Simulation/adder_full_1bit_tb.executable

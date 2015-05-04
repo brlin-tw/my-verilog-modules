@@ -2,7 +2,7 @@
 `timescale 1ns / 100ps
 
 //include模組
-`include "Source_code/adder_full_1bit/adder_full_1bit.v"
+`include "../Source_code/adder_full_1bit/adder_full_1bit.v"
 
 //時脈頻率
 //`define CLOCK_FREQ 50
