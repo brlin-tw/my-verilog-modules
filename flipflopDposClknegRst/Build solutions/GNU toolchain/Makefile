@@ -3,7 +3,7 @@
   #this file is licensed under LGPL 3 or later
 build:
 	mkdir --parents Simulation
-	iverilog -o Simulation/flipflopDposClknegRst_tb.executable Source_code/flipflopDposClknegRst_tb.v
+	iverilog -o Simulation/flipflopDposClknegRst_tb.executable "../../Source code/flipflopDposClknegRst_tb.v"
 
 simulate:
 	Simulation/flipflopDposClknegRst_tb.executable

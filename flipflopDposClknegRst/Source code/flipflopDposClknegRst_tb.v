@@ -1,5 +1,5 @@
 `timescale 1ns / 100ps
-`include "Source_code/flipflopDposClknegRst/flipflopDposClknegRst.v"
+`include "../../Source code/flipflopDposClknegRst/flipflopDposClknegRst.v"
 module flipflopDposClknegRst_tb();
   reg D, Clk, ClrN;
   wire Q, Qbar;
