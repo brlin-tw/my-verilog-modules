@@ -3,7 +3,7 @@
   #this file is licensed under LGPL 3 or later
 build:
 	mkdir --parents Simulation
-	iverilog -o Simulation/counterDflipflopWithAsyncClkUp4bit_tb.executable Source_code/counterDflipflopWithAsyncClkUp4bit_tb.v
+	iverilog -o Simulation/counterDflipflopWithAsyncClkUp4bit_tb.executable ../Source_code/counterDflipflopWithAsyncClkUp4bit_tb.v
 
 simulate:
 	Simulation/counterDflipflopWithAsyncClkUp4bit_tb.executable

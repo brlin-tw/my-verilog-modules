@@ -1,5 +1,5 @@
 `timescale 1ns / 100ps
-`include "Source_code/counterDflipflopWithAsyncClkUp4bit/counterDflipflopWithAsyncClkUp4bit.v"
+`include "../Source_code/counterDflipflopWithAsyncClkUp4bit/counterDflipflopWithAsyncClkUp4bit.v"
 module counterDflipflopWithAsyncClkUp4bit_tb();
   input [3:0]count;
   output reg Clk, ClrN;
