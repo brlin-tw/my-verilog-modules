@@ -1,8 +1,8 @@
 `timescale 1ns / 100ps
 `include "../Source_code/counterDflipflopWithAsyncClkUp4bit/counterDflipflopWithAsyncClkUp4bit.v"
 module counterDflipflopWithAsyncClkUp4bit_tb();
-  input [3:0]count;
-  output reg Clk, ClrN;
+  wire [3:0]count;
+  reg Clk, ClrN;
 
 
 counterDflipflopWithAsyncClkUp4bit dffAsynClock(count, Clk, ClrN);
