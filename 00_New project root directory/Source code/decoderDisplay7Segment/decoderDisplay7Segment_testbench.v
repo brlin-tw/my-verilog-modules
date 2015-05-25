@@ -17,7 +17,7 @@ module decoderDisplay7Segment_tb;
     begin
       $dumpfile ("Simulation/decoderDisplay7Segment_testbench.vcd");
       $dumpvars;
-      $monitor($time, " i=%4d -> o=%8b", i, o);
+      $monitor($time, " i=%2d -> o=%2H", i, o);
 
       i = 4'b0000;
 
