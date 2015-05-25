@@ -1,0 +1,3 @@
+# 模擬程式跟模擬結果是由 build 跟 simulate 建構目標自動產生的
+*.vcd
+*.simulation.executable

@@ -1,6 +1,6 @@
 //decoderDisplay7Segment testbench
 `timescale 1ns / 100ps
-`include "decoderDisplay7Segment/decoderDisplay7Segment.v"
+`include "decoderDisplay7Segment.v"
 
 //時脈頻率
 //`define CLOCK_FREQ 50
@@ -15,7 +15,7 @@ module decoderDisplay7Segment_tb;
 	//初始化
   initial
     begin
-      $dumpfile ("Simulation/decoderDisplay7Segment_tb.vcd");
+      $dumpfile ("Simulation/decoderDisplay7Segment_testbench.vcd");
       $dumpvars;
       $monitor($time, " i=%4d -> o=%8b", i, o);
 
