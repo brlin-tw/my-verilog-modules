@@ -1,4 +1,4 @@
-//encoderBCD4to2
+//encoder4to2
 //作者：林博仁(pika1021@gmail.com)
 `ifndef ENCODERBCD4TO2_V_INCLUDED
 	`define ENCODERBCD4TO2_V_INCLUDED
